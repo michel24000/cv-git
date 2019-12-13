@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(136,136,136);
+}
+
+header {
+    background-image: url("../images/background51.jpg");
+    background-repeat: no-repeat;
+    height: 30.3vh;
+    width: 100vw;
+    text-align: center;
+    color: white;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+article {
+    height: 60vh;
+    width: 100vw;
+    margin: 0;
+}
+
+article:first-child {
+    margin: 2vw;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    text-align: center;
+}
+
+h3 {
+    background-color: black;
+    text-align: center;
+    color: purple;
+}
+
+li {
+    list-style: none;
+}
+
+#nav {
+    margin-left: 37vw;
+}
+
+.size {
+    height: 7vh;
+}
+
+p {
+    color: white;
+}
+
+.white {
+    color: white;
+}
+
+section, aside {
+    margin-bottom: 1vh;
+}
