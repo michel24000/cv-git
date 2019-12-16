@@ -65,15 +65,3 @@ p {
 section, aside {
     margin-bottom: 1vh;
 }
-
-@media (max-width: 736px){
-   header {
-       height: auto;
-       text-align: left;
-       margin-left: 2vw;
-   }
-
-    #nav {
-        margin-left: 0;
-    }
-}
