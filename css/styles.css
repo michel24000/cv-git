@@ -69,5 +69,7 @@ section, aside {
 @media (max-width: 640px){
    header {
        height: auto;
+       text-align: left;
+       margin-left: 2vw;
    }
 }
