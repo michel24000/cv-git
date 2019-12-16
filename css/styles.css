@@ -27,7 +27,7 @@ article {
 }
 
 article:first-child {
-    margin: 2vw;
+    /*margin: 2vw;*/
 }
 
 footer {
@@ -72,6 +72,16 @@ section, aside {
 
 @media (max-width: 640px){
     #nav {
-        margin-left: auto;
+        margin-left: 0;
+    }
+
+    section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    aside {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
