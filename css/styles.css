@@ -2,6 +2,11 @@
     margin: 0;
 }
 
+html, body {
+    margin-left: 0;
+    padding: 0;
+}
+
 body {
     background-color: rgb(136,136,136);
 }
@@ -9,7 +14,6 @@ body {
 header {
     background-image: url("../images/background51.jpg");
     background-repeat: no-repeat;
-    height: 30.3vh;
     width: 100vw;
     text-align: center;
     color: white;
@@ -21,19 +25,15 @@ header {
 }
 
 article {
-    height: 60vh;
     width: 100vw;
     margin: 0;
 }
 
 footer {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 10vh;
+    justify-content: center;*/
     width: 100vw;
-    position: fixed;
-    text-align: center;
 }
 
 h3 {
@@ -50,8 +50,17 @@ li {
     margin-left: 37vw;
 }
 
-.size {
-    height: 7vh;
+.size-comp {
+    height: 8vh;
+}
+
+.size-exp {
+    height: 39vh;
+    margin-bottom: 1vh;
+}
+
+.size-form {
+    height: 10vh;
 }
 
 p {
@@ -62,6 +71,10 @@ p {
     color: white;
 }
 
-section, aside {
-    margin-bottom: 1vh;
+.container-fluid {
+    padding-left: 0;
+}
+
+h4 {
+    text-align: center;
 }
