@@ -26,10 +26,6 @@ article {
     margin: 0;
 }
 
-article:first-child {
-    /*margin: 2vw;*/
-}
-
 footer {
     display: flex;
     flex-direction: column;
@@ -68,4 +64,10 @@ p {
 
 section, aside {
     margin-bottom: 1vh;
+}
+
+@media (max-width: 640px){
+   header {
+       height: auto;
+   }
 }
