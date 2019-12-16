@@ -69,3 +69,9 @@ p {
 section, aside {
     margin-bottom: 1vh;
 }
+
+@media (max-width: 640px){
+    #nav {
+        margin-left: auto;
+    }
+}
