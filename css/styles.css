@@ -66,7 +66,7 @@ section, aside {
     margin-bottom: 1vh;
 }
 
-@media (max-width: 640px){
+@media (max-width: 736px){
    header {
        height: auto;
        text-align: left;
