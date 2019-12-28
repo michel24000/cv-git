@@ -46,8 +46,8 @@ li {
     list-style: none;
 }
 
-#nav {
-    margin-left: 37vw;
+@media screen and (min-width:1200px){
+    #nav { margin-left: 37vw;}
 }
 
 .size-comp {
