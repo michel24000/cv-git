@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-image: url("../images/background51.jpg");
+    background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     width: 100vw;
     text-align: center;
@@ -30,6 +30,9 @@ article {
 }
 
 footer {
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;*/
     width: 100vw;
     position: absolute;
 }
@@ -66,5 +69,21 @@ h4 {
 
 @media screen and (min-width:1200px){
     #nav { margin-left: 35.7vw;}
-    .lnk { margin-left: 43vw;}
+    .lnk { margin-left: 45vw;}
+}
+
+@media screen and (max-width:600px){
+    .lnk { margin-left: 30%;}
+}
+
+a:link {
+    color: darkgreen;
+}
+
+@media print {
+    body{
+        height: 21cm;
+        width: 29.7cm;
+    }
+    .lnk { margin-left: 43%;}
 }
