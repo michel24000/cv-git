@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-image: url("../images/background51.jpg");
+    background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     width: 28cm;
     height: 7cm;   /*hauteur du header, pas en dessous de 7 cm sinon le header s'écrase sur le contenu*/
@@ -93,5 +93,9 @@ footer {
 }
 
 .marge {
-    margin-top: 0.25cm;
+    margin-top: 1.25vh;
+}
+
+.marge-self {
+    margin-top: 0.37vh;
 }
