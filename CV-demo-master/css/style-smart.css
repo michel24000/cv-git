@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway';
+  font-size: 16px;
+  /*overflow: hidden;*/
+  /*line-height: 1.8em;*/
+}
+
+a {
+  color: #1C9C94;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+h1{
+  margin: 20px;
+  font-size: 70px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+h2{
+  font-size: 30px;
+  text-align: center;
+}
+
+header {
+  background-image: url('../img/banner1.jpg');    /*avant: './img/bg.jpg'*/
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header img {
+  border-radius: 50%;
+  border: 15px solid rgba(255,255,255,0.2) ;
+  max-width: 155px;
+}
+
+nav{
+  background-color: #424242;
+  /*min-height: 50px;*/
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: column;
+  /*flex-wrap: wrap;*/
+  align-items: center;
+  justify-content: space-around;
+  /*height: 50px;*/
+  list-style: none;
+  /*width:  100vw;*/
+  min-height: 150px;
+}
+
+section{
+  height: calc( 100vh - 50px);
+  padding-top: 50px;
+}
+
+i{
+  margin: 10px;  /*marge pour écarter l'icon et le nom*/
+}
+
+span{
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+
+#fleche-content, #li-accueil, #li-competences, #li-experiences,
+#li-formation, #li-contact
+{
+  cursor: pointer;
+}
+
+#section-nav{
+  min-height: calc( 100vh - 150px);
+}
+
+.div-nav-menu{
+  min-height: 50px;
+  width: 100vw;
+  background-color: #fc6f5c;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+
