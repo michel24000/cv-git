@@ -1,17 +1,22 @@
 /*début scripts pour scroll*/
 function scroll(lieux) {
     lieux.scrollIntoView({
-        block: 'end',
+        block: 'start',
         behavior: 'smooth',
-        inline: 'start'
+        inline: 'nearest'
     });
 }
 
-//debut fléche de scroll page d'accueil
+//debut fléche de la page d'accueil vers nav
 var fleche=document.querySelector("#fleche-content");
+var nav=document.querySelector("#nav");
 var apropos=document.querySelector("#apropos");
-fleche.addEventListener("click",function(){ scroll(apropos) });
-//fin fléche de scroll page d'accueil
+if (window.innerWidth <= 768){
+    fleche.addEventListener("click",function(){ scroll(apropos) });
+}else{
+    fleche.addEventListener("click",function(){ scroll(nav) });
+}
+//fin fléche de la page d'accueil vers nav
 
 //debut scroll vers page d'accueil
 var liAccueil=document.querySelector("#li-accueil");
