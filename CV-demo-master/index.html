@@ -9,15 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/multi-sceen.css">
     <link rel="stylesheet" media="screen and (min-width: 992px)"  href="css/style.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)"  href="css/style-smart.css"><!--s'applique au smartphone-->
     <!--<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css?ver=5.2.9">-->
 </head>
 
 <body>
-    <header id="accueil">
+    <header id="accueil"> <!--100vh-->
         <div>
-            <div style="display: flex; justify-content: center">
+            <div id="div-logo">
               <img src="./img/logo-1.png" />   <!--avant:  "./img/avatar.jpg"-->
             </div>
             <h1>MICHEL CARDON</h1>
@@ -29,7 +30,7 @@
             </a>
         </div>
     </header>
-    <nav id="nav">
+    <nav id="nav"> <!--150vh-->
         <ul>
             <li id="li-accueil"><a>ACCUEIL</a></li>
             <li id="li-competences"><a>COMPÉTENCES</a></li>
@@ -40,72 +41,80 @@
             <li><a href="https://cardon-michel.000webhostapp.com" target="_blank">PORTFOLIO</a></li>
         </ul>
     </nav>
-    <aside id="apropos">
-        <div id="section-nav" >
-            <div class="div-nav-menu">
-                <span><i class="icon apropos"></i>A PROPOS</span>
-            </div>
-            <div style="height: calc( 100vh - 200px); display: flex; justify-content: space-around; align-items: center; background-color: #d5dbe2">
-                <div style="display: flex; justify-content: space-around; align-items: center; background-color: #d5dbe2; height: auto; width: 1200px; flex-wrap: wrap;">
-                    <div>
-                        <img src="img/0.jpeg" height="300" style="margin-top: 10px">
-                    </div>
-                    <div style="width: auto; min-height: 300px; text-align: center; border: 1px solid black; margin: 10px 10px 10px 10px">
-                        <p style="margin: 10px 10px 10px 10px; text-align: justify;">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
-                            </p>
-                    </div>
+    <aside>   <!--100vh -150px-->
+        <div class="div-nav-menu" id="apropos">  <!--50px-->
+            <span><i class="icon apropos"></i>A PROPOS</span> <!--50px-->
+            <img id="burger" src="img/burger.png">
+        </div>
+        <div class="div-responsive">
+            <div class="div-responsive2">
+                <div>
+                    <img id="div-responsive2-image" src="img/12.png" height="300" style="border-radius: 50%; border: 10px solid black">
+                </div>
+                <div id="div-responsive2-div">
+                    <p id="p-apropos">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam beatae blanditiis consequuntur culpa
+                        </p>
                 </div>
             </div>
         </div>
     </aside>
-    <section id="competences">
-        <div class="div-nav-menu">
+    <section>
+        <div class="bidon" id="competences"></div>
+        <div class="div-nav-menu" >
             <span><i class="icon competences"></i>COMPÉTENCES</span>
         </div>
     </section>
-    <section id="experiences">
+
+    <section >
+        <div class="bidon" id="experiences"></div>
         <div class="div-nav-menu">
             <span><i class="icon experiences"></i>EXPÉRIENCES</span>
         </div>
     </section>
-    <section id="formation">
+
+    <section>
+        <div class="bidon" id="formation"></div>
         <div class="div-nav-menu">
             <span><i class="icon formation"></i>FORMATION</span>
         </div>
     </section>
-    <section id="contact">
+
+    <section >
+        <div class="bidon" id="contact"></div>
         <div class="div-nav-menu">
             <span><i class="icon contact"></i>CONTACT</span>
         </div>
     </section>
-<script src="js/scrollNavbar.js"></script>
+
+    <script src="js/cacherElement.js"></script>
+    <script src="js/scrollNavbar.js"></script>
 </body>
 </html>
