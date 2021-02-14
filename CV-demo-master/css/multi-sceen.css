@@ -10,7 +10,8 @@ body {
 }
 
 a {
-    color: #1C9C94;
+    color: white;
+    /*color: #1C9C94;*/
     text-decoration: none;
 }
 
@@ -23,16 +24,19 @@ h1{
     font-size: 70px;
     letter-spacing: 3px;
     text-align: center;
+    background-color: rgba(26, 26, 26, 0.5);
 }
 
 h2{
     font-size: 30px;
     text-align: center;
+    background-color: rgba(26, 26, 26, 0.5);
 }
 
 header {
-    background-image: url('../img/banner1.jpg');    /*avant: './img/bg.jpg'*/
+    background-image: url('../img/b3.jpg');    /*avant: './img/banner1.jpg'  b3 nikel et b8*/
     background-size: cover;
+
     height: 100vh;
     color: white;
     display: flex;
@@ -49,12 +53,36 @@ header {
 
 header img {
     border-radius: 50%;
-    border: 15px solid rgba(255,255,255,0.2) ;
+    border: 15px solid rgba(26,26,26,0.5) ;
     max-width: 155px;
 }
 
 #fleche-content, #li-accueil, #li-competences, #li-experiences,
-#li-formation, #li-contact, #burger
+#li-formation, #li-contact, #burger, #div-fleche
 {
     cursor: pointer;
+}
+
+#div-fleche{
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.blob {
+    transform: scale(1);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.50);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.50);
+    }
 }

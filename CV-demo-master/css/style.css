@@ -1,5 +1,10 @@
+header{
+  background-position: 0px -20px;
+}
+
 nav{
   background-color: #424242;
+  /*background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);*/
   min-height: 50px;
   position: sticky;
   top: 0;
@@ -36,8 +41,11 @@ span{
 
 .div-nav-menu{
   min-height: 150px;
-  background-color: #fc6f5c;
-  color: white;
+  /*background-color: #fc6f5c;*/
+  /*background-color: orangered;*/
+  /*background: #f69d3c;*/
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,14 +56,21 @@ span{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #d5dbe2;
+  /*background-color: #d5dbe2;*/
+  /*background-image: url("../img/b2.jpg");
+  filter: blur(5px);*/
+  /*background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);*/
+  background-image: url("../img/circuit.jpg");
+
 }
 
 .div-responsive2{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #d5dbe2;
+  /*background-color: #d5dbe2;*/
+  /*background: rgba(63, 135, 166, 0.5);*/
+  color: white;
   height: auto;
   width: 1200px;
   flex-wrap: wrap;
@@ -69,7 +84,8 @@ span{
   width: auto;
   min-height: 300px;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #424242;
+  background-color: rgba(66, 66, 66, 0.9);
   margin: 10px 10px 10px 10px;
 }
 
@@ -84,6 +100,7 @@ span{
 
 .bidon{
   height: 50px;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 }
 
 

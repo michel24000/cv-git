@@ -32,7 +32,7 @@
 
 .apropos{
     font-size: 3em;
-    color: white;
+    color: black;
     font-weight: 900;
 }
 /*fin de css pour l'icone apropos*/
@@ -45,7 +45,7 @@
 
 .competences{
     font-size: 3em;
-    color: white;
+    color: black;
     font-weight: 900;
 }
 /*fin de css pour l'icone competences*/
@@ -59,7 +59,7 @@
 
 .experiences{
     font-size: 3em;
-    color: white;
+    color: black;
     font-weight: 900;
 }
 /*fin de css pour l'icone experiences*/
@@ -72,7 +72,7 @@
 
 .formation{
     font-size: 3em;
-    color: white;
+    color: black;
     font-weight: 900;
 }
 /*fin de css pour l'icone formation*/
@@ -85,7 +85,7 @@
 
 .contact{
     font-size: 3em;
-    color: white;
+    color: black;
     font-weight: 900;
 }
 /*fin de css pour l'icone contact*/
