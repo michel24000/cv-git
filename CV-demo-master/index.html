@@ -9,15 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/fontawesome.css">
-    <link rel="stylesheet" href="css/multi-sceen.css">
-    <link rel="stylesheet" media="screen and (min-width: 992px)"  href="css/style.css">
-    <!--<link rel="stylesheet" media="screen and (min-width: )"  href="">-->
-    <link rel="stylesheet" media="screen and (max-width: 768px)"  href="css/style-smart.css"><!--s'applique au smartphone-->
-    <!--<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css?ver=5.2.9">-->
+    <link rel="stylesheet" href="css/multi-sceen.css"> <!-- css charge par défaut-->
+    <link rel="stylesheet" media="screen and (min-width: 992px)"  href="css/style.css"> <!-- css charge sur pc à partir de 992 px-->
+    <link rel="stylesheet" media="screen and (max-width: 768px)"  href="css/style-smart.css"> <!-- css charge jusqu'à 768px (smartphone)-->
+    <link rel="stylesheet" href="css/bibliotheque.css">
 </head>
 
 <body>
-    <header id="accueil"> <!--100vh-->
+    <header class="d-flex-column justify-content-around align-items-center box-border-box" id="accueil"> <!--100vh-->
         <div>
             <div id="div-logo">
               <img src="./img/logo-1.png" />   <!--avant:  "./img/avatar.jpg"-->

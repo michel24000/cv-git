@@ -39,11 +39,7 @@ header {
 
     height: 100vh;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    box-sizing: border-box;
+
 }
 
 #div-logo{
