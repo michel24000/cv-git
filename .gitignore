@@ -1,0 +1,6 @@
+# gitignore
+# website: https://michel24000.github.io/cv-git/
+#
+
+# Ignoring directories
+.idea/
