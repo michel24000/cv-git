@@ -1,170 +1,312 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" name="viewport">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css" media="screen"/>
-    <link rel="stylesheet" href="css/print.css" media="print"/>
-</head>
-<body class="container-fluid">
-<header class="row">
-    <div class="col-xs-12 col-lg-12 mt-2 mb-1"><h1>Mr CARDON MICHEL</h1></div>
-    <h5 class="col-xs-12 col-lg-12"><mark>Citation :</mark> "Tout le monde est un génie. Mais si on juge un poisson sur sa capacité à grimper à un arbre,<br> il passera sa vie à croire qu’il est stupide." – Albert Einstein<br><br>
+    <!--Technicien Supérieur Systèmes et Réseaux-->
+    <head>
+        <title>Technicien Supérieur Systèmes et Réseaux</title>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Michel Cardon"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="./src/css/base.css"/>
+        <link rel="stylesheet" href="./src/css/card.css"/>
+        <link rel="stylesheet" href="./src/css/contacts-box.css"/>
+        <link rel="stylesheet" href="./src/css/list.css"/>
+        <link rel="stylesheet" href="./src/css/path.css"/>
+        <link rel="stylesheet" href="./src/css/skill-box.css"/>
+        <link rel="stylesheet" href="./src/css/thumbnail.css"/>
+        <link rel="icon" type="image/x-icon" href="src/img/base/favicon.png"/>
+    </head>
+    <body>
+        <div class="page">
+            <div class="card" id="person">
+                <img id="person-picture" src="src/img/profil/photo.jpg"/>
 
-        <mark>Livre du moment:</mark>Libérez votre cerveau! – Traité de neurosagesse pour changer l'école et la société – Idriss Aberkane <br>
-    </h5>
-    <!--<div id="nav" class="collapse navbar-collapse bg-dark" id="responsive">-->
+                <!--CV Michel Cardon-->
+                <section>
+                    <h1 id="person-fullname">CV Michel Cardon</h1>
+                    <h2 id="person-job"></h2>
+                    <p>Bonjour, je suis <strong id="person-firstname">Michel Cardon</strong>,<strong id="person-speciality">Technicien Supérieur Systèmes et réseaux</strong>  <strong id="person-company"></strong>actuellement en formation dans la ville de <strong id="person-city">Douai</strong>.</p>
+                    <div>
+                        <a href="mailto:mcardon@neuf.fr" class="button" target="_blank" id="person-email">M'envoyer un email</a>
+                        <span class="or">  </span>
+                        <a target="_blank" class="button" href="src/pdf/CV_Michel_Cardon.pdf">Voir mon CV</a>
+                        <a target="_blank" class="button" href="http://michel-cardon-portfolio.alwaysdata.net/">Voir mon portfolio</a>
+                    </div>
+                    <hr/>
+                </section>
 
-    <nav id="nav" class="navbar navbar-light bg-dark mt-4">
-        <a class="navbar-brand text-white" href="#competences">Compétences</a>
-        <a class="navbar-brand text-white" href="#experiences">Expériences Professionnelles</a>
-        <a class="navbar-brand text-white" href="#formation">Formation</a>&nbsp;
-        <a class="navbar-brand text-white" href="pdf/CV_CARDON_MICHEL.pdf" download="CV CARDON MICHEL">Télécharger CV</a>
-        <a class="navbar-brand text-white" href="http://michel-cardon-portfolio.alwaysdata.net/" target="_blank">Portfolio</a>
-    </nav>
-</header>
-<article class="row">
-    <h3 class="text-center col-lg-12">Mon parcours</h3>
-        <aside class="col-xs-12 col-lg-4 taille">
+                <!--Contacts-->
+                <section>
+                    <h3>Contacts</h3>
+                    <div class="path" id="visit-card">
+                        <img src="src/img/profil/carte.png" style="width: 100%">
+                        <!--remplacé par l'image de la carte de visite ci-dessus-->
+                        <!--<div style="width: 200px">
+                            <p class="except">Email : mcardon@neuf.fr</p>
+                            <p class="except" >Téléphone : 06.61.31.78.99</p>
+                            <p class="except" >Commune : Rost-Warendin</p>
+                            <p class="except" >Code postal : 59286</p>
+                            <p class="except" >Code postal : 59286</p>
+                        </div>-->
+                    </div>
+                </section>
 
-            <h3>Contact:</h3>
-            <address class="col-xs-12 col-lg-12 text-center">Commune: 59286 Roost-Warendin<br><br>
-                    <img src="images/tel.png"> tel : 06.61.31.78.99<br> &nbsp;
-                    <img src="images/mail.png"> mail: <a href="mailto:mcardon@neuf.fr">mcardon@neuf.fr</a>
-            </address>
-            <address class="col-xs-12 col-lg-12"></address>
-            <h3 id="competences">Compétences:</h3>
-            <ul class="list-group mt-3">
-                <div class="row marge-self">
-                    <li class="list-group-item size-comp col-xs-12 col-lg-12 mb-5" >HTML5
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <!--Outils utilisés-->
+                <section>
+                    <h3>Outils utilisés</h3>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/apps/vmwareESXI.png)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">VMware vSphere ESXi</span>
+                            <p class="thumbnail-title">Hyperviseur de type 1</p><br>
+                            <p class="thumbnail-description">VMware vSphere ESXi est un hyperviseur de type 1 de classe entreprise développé par VMware</p>
+                            <div class="thumbnail-footer">
+                                <a href="https://www.vmware.com/fr.html" target="_blank">En savoir plus</a>
+                            </div>
                         </div>
-                    </li>
-                    <li class="list-group-item size-comp col-xs-12 col-lg-12 mb-5" >CSS3
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/apps/proxmox.jpg)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">Promox VE</span>
+                            <p class="thumbnail-title">Proxmox Virtual Environnement</p>
+                            <p class="thumbnail-description">Solution de virtualisation libre basée sur l'hyperviseur Linux KVM.</p><br>
+                            <div class="thumbnail-footer">
+                                <a href="https://www.proxmox.com/en/" target="_blank">En savoir plus</a>
+                            </div>
                         </div>
-                    </li>
-                    <li class="list-group-item size-comp col-xs-12 col-lg-12 mb-5">JAVASCRIPT
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/apps/ws2022.png)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">Windows server 2022</span>
+                            <p class="thumbnail-title">Windows server 2022</p><br>
+                            <p class="thumbnail-description">Actuel système d'exploitation commercialisé par Microsoft et destiné aux serveurs</p>
+                            <div class="thumbnail-footer">
+                                <a href="https://www.microsoft.com/fr-fr/evalcenter/evaluate-windows-server-2022" target="_blank">En savoir plus</a>
+                            </div>
                         </div>
-                    </li>
-                    <li class="list-group-item size-comp col-xs-12 col-lg-12 mb-5">PHP
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/apps/vmware.png)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">VMWARE</span>
+                            <p class="thumbnail-title">VMWARE Workstation pro 16</p>
+                            <p class="thumbnail-description">Outil de virtualisation de poste de travail créé par la société VMware</p>
+                            <div class="thumbnail-footer">
+                                <a href="https://www.vmware.com/fr/products/workstation-pro/workstation-pro-evaluation.html" target="_blank">En savoir plus</a>
+                            </div>
                         </div>
-                    </li>
-                    <li class="list-group-item size-comp col-xs-12 col-lg-12 mb-5">SQL
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li>
-                    <li class="list-group-item size-comp col-xs-12 col-lg-12 mb-5">C#
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li>
-                    <li class="list-group-item size-comp col-xs-12 col-lg-12 mb-5">MYSQL MARIADB
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li>
-                </div>
-                <div class="row marge">
-                    <li class="list-group-item size-comp col-xs-12 col-lg-12 mb-5">BOOTSTRAP   BOOTSNIPP   LARAVEL
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li>
-                    <li class="list-group-item size-comp col-xs-12 col-lg-12 mb-5">FLEXBOX
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li>
-                    <li class="list-group-item size-comp col-xs-12 col-lg-12 mb-5">WM WARE  VIRTUALBOX  YUNOHOST  CITRIX RECEIVER
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li>
-                </div>
-                <div class="row marge">
-                    <li class="list-group-item size-comp col-xs-12 col-lg-12 mb-5">PHPSTORM   VISUAL STUDIO 2017   NOTEPAD++
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li>
-                    <li class="list-group-item size-comp col-xs-12 col-lg-12 mb-5">WORDPRESS
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li>
-                    <li class="list-group-item size-comp col-xs-12 col-lg-12 mb-4">CONCEPTION MODELISATION HÉBERGEMENT DÉPLOIEMENT MIGRATION GESTION MULTISITE
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li>
-                </div>
-            </ul>
-        </aside>
-        <section class="col-xs-12 col-lg-8 taille1">
-            <div class="col-xs-12 col-lg-12">
-                <h3 id="experiences">Expériences Professionnelles:</h3>
+                    </div>
+                    <hr/>
+                </section>
 
-                <ul class="list-group">
-                    <li class="list-group-item mb-2"><strong>DU 05/07/2021 AU 22/10/2021</strong> ACSD DOUAI, CONCEPTEUR DÉVELOPPEUR D'APPLICATIONS<br><br>
-                        <img class="visible" src="images/acsd.jpg">&nbsp;STAGE DE FORMATION<br><br>
-                        <strong>Application lourde de gestion des demandes de congè</strong><br><br>
-                    </li>
-                </ul>
-                <ul class="list-group">
-                    <li class="list-group-item mb-2"><strong>DU 01/11/2020 AU 11/12/2020</strong> ACSD DOUAI, DÉVELOPPEUR WEB<br><br>
-                        <img class="visible" src="images/acsd.jpg">&nbsp;CDD<br><br>
-                        <strong>Refonte de site web compléte :</strong> <a href="https://www.centres-sociaux-douai.fr" target="_blank">https://www.centres-sociaux.douai.fr</a> (fin)<br><br>
-                    </li>
-                </ul>
-                <ul class="list-group">
-                    <li class="list-group-item mb-2"><strong>DU 02/06/2020 AU 25/09/2020</strong> ACSD DOUAI, DÉVELOPPEUR WEB<br><br>
-                        <img class="visible" src="images/acsd.jpg">&nbsp;STAGE DE FORMATION<br><br>
-                        <strong>Refonte de site web compléte :</strong> <a href="https://www.centres-sociaux-douai.fr" target="_blank">https://www.centres-sociaux.douai.fr</a> (début)<br><br>
-                        <strong>Modification de site :</strong> <a href="http://open-educpop.eu/" target="_blank">http://open-educpop.eu/</a><br><br>
-                        <strong>Modification de site :</strong> <a href="http://acsd-numerique.eu/" target="_blank">http://acsd-numerique.eu/</a><br><br>
-                    </li>
-                </ul>
-                <ul class="list-group">
-                    <li class="list-group-item mb-2"><strong>DU 02/01/2017 AU 04/10/2019</strong> TIBCO Lens<br><br>
-                        <img class="visible" src="images/LM.jpg">TECHNICIEN Help Desk Pour le client Leroy Merlin et Bricoman &nbsp;<img class="visible1" src="images/BM.png"><br><br>
-                        <strong>Niveau 1</strong> - Réceptionner les demandes des utilisateurs (téléphone, mails et portail web)<br><br>
-                        - Analyser et résoudre les incidents décrits dans le périmètre HELP DESK, en adéquation avec les engagements de service contractuel.<br><br>
-                        - Enregistrer tous les incidents et les demandes dans l'outil mis à ma disposition, affecter la priorité et traiter si cela est dans mon "domaine de compétences" (process), sinon escalader
-                        au niveau supérieur du bon « secteur ; pôle »<br><br>
+                <!--Formations-->
+                <section>
+                    <h3>Formations</h3>
+                    <div class="path">
+                        <div class="step">
+                            <p class="step-title"><strong>GRETA Douai</strong> - du 19/09/22 au 30/06/23</p>
+                            <p>Titre professionnel</p>
+                            <p>Technicien Supérieur Systèmes et Réseaux</p>
+                            <p>Niveau V BTS (BAC +2)</p>
+                            <p>statut : <strong>Formation en cours</strong></p>
+                        </div>
+                        <div class="step">
+                            <p class="step-title"><strong>GRETA Douai</strong> - du 04/01/21 au 03/12/21</p>
+                            <p>Titre professionnel</p>
+                            <p>Concepteur Développeur d'applications</p>
+                            <p>Niveau VI [Licence (BAC +3/+4)]</p>
+                            <p>statut : <strong>Diplôme obtenu</strong></p>
+                        </div>
+                        <div class="step">
+                            <p class="step-title"><strong>GRETA Douai</strong> - du 08/11/19 au 23/10/20</p>
+                            <p>Titre professionnel</p>
+                            <p>Développeur Web et Web Mobile</p>
+                            <p>Niveau V BTS (BAC +2)</p>
+                            <p>statut : <strong>Diplôme obtenu</strong></p>
+                        </div>
+                    </div>
+                </section>
 
-                        <strong>Niveau 2</strong> - Résoudre les incidents escaladées par le niveau 1 (pole logistique) grâce aux accès administrateur sur divers applications et le cas échéant envoyer au niveau 3
-                        Utilisation WINDOWS SERVER 2012 et VM WARE , GESTION des accès et Connexion CITRIX RECEIVER
-                        Assistance des fournisseurs sur la transmissions des EDI (commandes, avis d’expéditions, factures, annulation de commandes).
-                    </li>
-                </ul>
+                <!--Compétences-->
+                <section>
+                    <h3>Compétences</h3>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/apps/itil.jpg)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">MÉTHODE ITIL</span>
+                            <p class="thumbnail-title">Assistance aux utilisateurs.</p><br>
+                            <p class="thumbnail-description">Aide les organisations à améliorer leur productivité, efficacité, efficience et permet de réaliser un premier pas vers le changement.</p>
+                            <!--<div class="thumbnail-footer">
+                                <a href="" target="_blank">En savoir plus</a>
+                            </div>-->
+                        </div>
+                    </div>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/apps/virtualisation.jpg)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">VIRTUALISATION</span>
+                            <p class="thumbnail-title">Mise en place et maintenance d'un environnement virtualisé.</p>
+                            <p class="thumbnail-description">Consiste à exécuter sur une machine hôte, dans un environnement isolé, des systèmes d'exploitation ou des applications.</p>
+                            <!--<div class="thumbnail-footer">
+                                <a href="" target="_blank">En savoir plus</a>
+                            </div>-->
+                        </div>
+                    </div>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/apps/glpi.png)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">GLPI</span>
+                            <p class="thumbnail-title">Gestionnaire Libre de Parc Informatique.</p>
+                            <p class="thumbnail-description">Logiciel libre de gestion des services informatiques et de gestion des services d'assistance.</p>
+                            <div class="thumbnail-footer">
+                                <a href="https://glpi-project.org/fr/" target="_blank">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/apps/ocs.png)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">Ocs inventory</span>
+                            <p class="thumbnail-title">Open Computer and Software Inventory.</p>
+                            <p class="thumbnail-description">Application permettant de réaliser un inventaire sur la configuration matérielle des machines du réseau.</p>
+                            <div class="thumbnail-footer">
+                                <a href="https://ocsinventory-ng.org/?lang=fr" target="_blank">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/apps/serveur.jpg)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">WINDOWS, LINUX, AD</span>
+                            <p class="thumbnail-title">Installation et administration de serveurs.</p>
+                            <p class="thumbnail-description">L’installation d’un ou de plusieurs serveurs sont  un plus pour une meilleure organisation au sein d’une structure.</p>
+                            <!--<div class="thumbnail-footer">
+                                <a href="" target="_blank">En savoir plus</a>
+                            </div>-->
+                        </div>
+                    </div>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/apps/assemblage.png)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">Assemblage et maintenance</span>
+                            <p class="thumbnail-title">Assemblage et maintenance d'équipement informatique.</p>
+                            <p class="thumbnail-description">Maintenance : <br>préventive, corrective et évolutive.</p>
+                            <!--<div class="thumbnail-footer">
+                                <a href="" target="_blank">En savoir plus</a>
+                            </div>-->
+                        </div>
+                    </div>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/apps/acronis.jpg)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">ACRONIS</span>
+                            <p class="thumbnail-title">Acronis Snap Deploy.</p>
+                            <p class="thumbnail-description">Déployez et provisionnez une même image sur tous vos serveurs et postes de travail, aussi rapidement et facilement que sur une seule machine.</p>
+                            <div class="thumbnail-footer">
+                                <a href="https://www.acronis.com/fr-fr/products/snap-deploy/" target="_blank">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/apps/wsus.png)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">WSUS</span>
+                            <p class="thumbnail-title">Windows Server Update Services.</p>
+                            <p class="thumbnail-description">Service permettant de distribuer les mises à jour pour Windows et d'autres applications Microsoft.</p>
+                            <div class="thumbnail-footer">
+                                <a href="https://learn.microsoft.com/fr-fr/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus" target="_blank">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/apps/wsus.png)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">PRTG</span>
+                            <p class="thumbnail-title">Supervision infrastructure réseau.</p>
+                            <p class="thumbnail-description">Logiciel commercial de supervision qui s'exécute sous Windows.</p>
+                            <div class="thumbnail-footer">
+                                <a href="https://www.paessler.com/fr/prtg" target="_blank">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/apps/cisco.jpg)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">CISCO</span>
+                            <p class="thumbnail-title">Configuration d'actif réseau.</p>
+                            <p class="thumbnail-description">Permet aux appareils connectés de partager des informations et de communiquer entre eux.</p>
+                            <div class="thumbnail-footer">
+                                <a href="https://www.cisco.com/site/fr/fr/products/networking/switches/index.html" target="_blank">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/apps/voip.jpg)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">TÉLÉPHONIE IP</span>
+                            <p class="thumbnail-title">Installation et Configuration de téléphonie IP.</p>
+                            <p class="thumbnail-description">Permet la transmission des communications vocales via des réseaux au protocole IP et permet la convergence de tous les postes informatiques d’une entreprise en un seul réseau unifié.</p>
+                            <!--<div class="thumbnail-footer">
+                                <a href="" target="_blank">En savoir plus</a>
+                            </div>-->
+                        </div>
+                    </div>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/apps/concepteur.jpg)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">CONCEPTEUR DÉVELOPPEUR</span>
+                            <p class="thumbnail-title">Conception et développement de site web et d'application.</p>
+                            <p class="thumbnail-description">Chargé de la réalisation technique d'une application, basée sur un cahier des charges précis. Il calcule et conçoit des programmes informatiques pour le traitement des données.</p>
+                            <!--<div class="thumbnail-footer">
+                                <a href="" target="_blank">En savoir plus</a>
+                            </div>-->
+                        </div>
+                    </div>
+                    <hr/>
+                </section>
+
+                <!--Expériences professionnelles-->
+                <section>
+                    <h3>Expériences professionnelles</h3>
+                    <div class="path">
+                        <div class="step">
+                            <p class="step-title"><strong>ACSD Douai</strong> - du 05/07/21 au 22/10/21</p>
+                            <p>Concepteur développeur d'applications</p>
+                            <p>Immersion entreprise <strong>3 mois</strong></p>
+                        </div>
+                        <div class="step">
+                            <p class="step-title"><strong>ACSD Douai</strong> - du 01/11/20 au 11/12/20</p>
+                            <p>Développeur web et web mobile</p><br>
+                            <p>Refonte site internet :<br> - https://centres-sociaux-douai.fr (contenu)</p><br>
+                            <p>Cdd <strong>1 mois et demi</strong></p>
+                        </div>
+                        <div class="step">
+                            <p class="step-title"><strong>ACSD Douai</strong> - du 02/06/20 au 25/09/20</p>
+                            <p>Développeur web et web mobile</p><br>
+                            <p>Refonte site internet :<br>&nbsp;&nbsp;- https://centres-sociaux-douai.fr (structure)</p><br>
+                            <p>Modification de site :<br>&nbsp;&nbsp;- http://open-educpop.eu/ (contenu)</p>
+                            <p>&nbsp;&nbsp;- http://acsd-numerique.eu/ (contenu)</p><br>
+                            <p>Immersion entreprise <strong>3 mois</strong></p>
+                        </div>
+                        <div class="step">
+                            <p class="step-title"><strong>Tibco</strong> - du 02/01/17 au 04/10/19</p>
+                            <p>Technicien Help Desk</p>
+                            <p><strong>Prestataire support informatique Leroy Merlin</strong></p>
+                            <p>CDD <strong>2 ans et demi</strong></p>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Citation-->
+                <section>
+                    <h3>Citation</h3>
+                    <div class="path">
+                        <p>"Tout le monde est un génie. Mais si on juge un poisson sur sa capacité à grimper à un arbre,
+                            il passera sa vie à croire qu’il est stupide." – Albert Einstein</p>
+                    </div>
+                </section>
             </div>
-            <div class="col-xs-12 col-lg-12">
-                <h3 id="formation">Formation:</h3>
-                <ul class="list-group mb-2">
-                    <li class="list-group-item">DU 04/01/2021 au 03/12/2020   GRETA DOUAI<br>
-                        Formation Concepteur Développeur d'applications Titre professionnel de niveau VI [Licence (BAC +3/+4)) Diplôme Obtenu</li>
-                </ul>
-                <ul class="list-group">
-                    <li class="list-group-item">DU 08/11/2019 au 23/09/2020   GRETA DOUAI<br>
-                        Formation Developpeur Web et Mobile Titre professionnel de niveau V BTS (BAC +2) Diplôme Obtenu</li>
-                </ul>
-            </div>
-        </section>
-</article>
-<footer class="bg-dark">
-    <a href="https://www.linkedin.com/in/michel-cardon-51184919b" target="blank" title="Lnk">
-        <img class="lnk" src="images/lnk.png" alt="Lnk" title="Mon profil" />&nbsp; Profil Linkedin
-    </a>
-    <p class="text-center">Created by Michel Cardon</p>
-</footer>
-</body>
+        </div>
+    </body>
 </html>
